@@ -8,5 +8,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        showMainPage()
+    }
+
+    private fun showMainPage() {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.container, MainFragment())
+            .commit()
     }
 }
