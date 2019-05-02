@@ -15,7 +15,7 @@ class MainFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        buttonSitter.setOnClickListener {
+        buttonOwner.setOnClickListener {
             getNavigator().toSittersPage()
         }
     }
