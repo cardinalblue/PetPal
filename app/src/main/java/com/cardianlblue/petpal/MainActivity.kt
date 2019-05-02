@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     val navigator = object : PageNavigator {
+        override fun toOwnersPage() {
+            replacePage(OwnerFragment())
+        }
         override fun toSittersPage() {
             replacePage(SitterFragment())
         }

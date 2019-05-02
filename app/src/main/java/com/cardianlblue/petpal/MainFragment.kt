@@ -18,5 +18,9 @@ class MainFragment : BaseFragment() {
         buttonOwner.setOnClickListener {
             getNavigator().toSittersPage()
         }
+
+        buttonSitter.setOnClickListener {
+            getNavigator().toOwnersPage()
+        }
     }
 }
