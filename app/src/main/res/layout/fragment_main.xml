@@ -6,28 +6,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-            android:text="Petpal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:id="@+id/textTitle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="40dp"
-            app:layout_constraintTop_toTopOf="parent"/>
     <Button
-            android:text="Owner"
-            android:layout_width="0dp"
+            android:text="@string/main_owner"
+            android:layout_width="200dp"
             android:layout_margin="16dp"
+            android:background="@drawable/shape_owner"
             android:layout_height="wrap_content"
             android:id="@+id/buttonOwner"
-            app:layout_constraintBottom_toTopOf="@id/buttonSitter"
+            app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/buttonSitter"
+            app:layout_constraintVertical_chainStyle="packed"/>
     <Button
-            android:text="Sitter"
-            android:layout_width="0dp"
+            android:text="@string/main_sitter"
+            android:layout_width="200dp"
+            android:background="@drawable/shape_sitter"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="40dp"
@@ -36,5 +30,6 @@
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/buttonOwner"
+            app:layout_constraintHorizontal_bias="0.5"/>
 </android.support.constraint.ConstraintLayout>

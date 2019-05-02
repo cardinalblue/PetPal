@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Petpal</string>
+    <string name="main_owner">Pet Owner</string>
+    <string name="main_sitter">Pet Sitter</string>
 </resources>
