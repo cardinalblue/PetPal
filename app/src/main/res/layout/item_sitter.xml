@@ -61,4 +61,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+    <ImageView
+            android:id="@+id/imageStart2"
+            android:layout_marginStart="7dp"
+            app:layout_constraintStart_toEndOf="@id/imageStart1"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:id="@+id/imageStart3"
+            android:layout_marginStart="7dp"
+            app:layout_constraintStart_toEndOf="@id/imageStart2"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:id="@+id/imageStart4"
+            android:layout_marginStart="7dp"
+            app:layout_constraintStart_toEndOf="@id/imageStart3"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:id="@+id/imageStart5"
+            android:layout_marginStart="7dp"
+            app:layout_constraintStart_toEndOf="@id/imageStart4"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
 </android.support.constraint.ConstraintLayout>
