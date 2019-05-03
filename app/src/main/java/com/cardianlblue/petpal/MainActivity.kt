@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             replacePage(OwnerFragment())
         }
         override fun toSittersPage() {
-            replacePage(SitterFragment())
+            replacePage(SittersFragment())
         }
     }
 }

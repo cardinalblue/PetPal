@@ -25,6 +25,8 @@ class SitterAdapter : RecyclerView.Adapter<SitterViewHolder>() {
         val sitter = sitters[position]
         with(viewHolder) {
             textName.text = sitter.name
+            textDistance.text = "${sitter.distance} miles"
+            textStar.text = "${sitter.stars} start, ${sitter.reviews} reviews"
         }
     }
 }
@@ -32,5 +34,7 @@ class SitterAdapter : RecyclerView.Adapter<SitterViewHolder>() {
 class SitterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     val textName = itemView.textName
+    val textDistance = itemView.textDistance
+    val textStar = itemView.textStar
 
 }
