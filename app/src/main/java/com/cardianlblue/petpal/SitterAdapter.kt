@@ -29,6 +29,7 @@ class SitterAdapter : RecyclerView.Adapter<SitterViewHolder>() {
             textDistance.text = "${sitter.distance} miles"
             textStar.text = "${sitter.stars} stars, ${sitter.reviews} reviews"
             imageAvatar.setImageResource(sitter.imageRes)
+            textPrice.text = sitter.price
 
             for (s in 0..4) {
                 if (sitter.stars > s + 0.5) {
@@ -51,5 +52,6 @@ class SitterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val textDistance = itemView.textDistance
     val textStar = itemView.textStar
     val imageAvatar = itemView.imageAvatar
+    val textPrice = itemView.textPrice
     val imageArray = arrayOf(itemView.imageStart1, itemView.imageStart2, itemView.imageStart3, itemView.imageStart4, itemView.imageStart5)
 }

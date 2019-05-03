@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Theme.Petpal.Spinner" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
 </resources>

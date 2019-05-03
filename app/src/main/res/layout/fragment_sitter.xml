@@ -3,6 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/petpal_dog_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -15,7 +16,7 @@
 
         <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/spinnerSort"
-                android:background="@drawable/shape_sitter_sorted_bg"
+                style="@style/Theme.Petpal.Spinner"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_width="match_parent"
