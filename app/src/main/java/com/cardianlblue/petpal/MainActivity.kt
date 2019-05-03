@@ -34,8 +34,14 @@ class MainActivity : AppCompatActivity() {
             replacePage(SittersFragment())
         }
 
-        override fun toBookingPage() {
-            replacePage(SitterBookingFragment())
+
+        override fun toBookingPage(profileRes: Int) {
+            val fragment = SitterBookingFragment()
+            val data = Bundle()
+            data.putInt(ARG_BOOKING_PROFILE, profileRes)
+            fragment.arguments = data
+            replacePage(fragment)
+
         }
     }
 }

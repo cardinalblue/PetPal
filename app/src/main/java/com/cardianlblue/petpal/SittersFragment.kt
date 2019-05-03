@@ -29,6 +29,9 @@ open class SittersFragment : Fragment() {
         setRecyclerView()
         setSpinners()
 
+        val pagerAdapter = SitterDetailPagerAdapter(childFragmentManager!!, sitterRepository.getSitters())
+        pagerSitterDetail.adapter = pagerAdapter
+
         spinnerSort.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
 
@@ -45,8 +48,8 @@ open class SittersFragment : Fragment() {
             }
         }
 
-        sitterAdapter.onSitterItemClicked = {
-            openSitterDetail()
+        sitterAdapter.onSitterItemClicked = { position ->
+            openSitterDetail(position)
         }
     }
 
@@ -71,10 +74,8 @@ open class SittersFragment : Fragment() {
         spinnerSort.adapter = sortAdapter
     }
 
-    private fun openSitterDetail() {
-        val pagerAdapter = SitterDetailPagerAdapter(fragmentManager!!, sitterRepository.getSitters())
-        pagerSitterDetail.adapter = pagerAdapter
-        pagerSitterDetail.currentItem = 0
+    private fun openSitterDetail(position: Int) {
+        pagerSitterDetail.currentItem = position
         pagerSitterDetail.pageMargin = 14.dpToPx().toInt()
         pagerSitterDetail.visibility = View.VISIBLE
         viewOverlay.visibility = View.VISIBLE
