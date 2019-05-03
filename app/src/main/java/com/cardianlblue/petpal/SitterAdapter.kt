@@ -1,6 +1,6 @@
 package com.cardianlblue.petpal
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.item_sitter.view.*
 class SitterAdapter : RecyclerView.Adapter<SitterViewHolder>() {
 
     var sitters: MutableList<Sitter> = mutableListOf()
+    var onSitterItemClicked: (Int) -> Unit = {}
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): SitterViewHolder {
         val context = viewGroup.context
@@ -32,6 +33,10 @@ class SitterAdapter : RecyclerView.Adapter<SitterViewHolder>() {
                 imageStart1.setImageResource(R.drawable.star_gold)
             } else {
                 imageStart1.setImageResource(R.drawable.star_silver)
+            }
+
+            itemView.setOnClickListener {
+                onSitterItemClicked.invoke(position)
             }
         }
     }

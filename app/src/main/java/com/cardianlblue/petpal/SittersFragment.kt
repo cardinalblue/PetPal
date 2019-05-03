@@ -1,8 +1,8 @@
 package com.cardianlblue.petpal
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,6 +44,10 @@ open class SittersFragment : Fragment() {
                 }
             }
         }
+
+        sitterAdapter.onSitterItemClicked = {
+            openSitterDetail()
+        }
     }
 
     private fun setRecyclerView() {
@@ -59,12 +63,25 @@ open class SittersFragment : Fragment() {
         sitterAdapter.sitters.clear()
         sitterAdapter.sitters.addAll(sitters)
         sitterAdapter.notifyDataSetChanged()
-
     }
 
     private fun setSpinners() {
         val sortBy = arrayOf("Most Reviews", "Top Ranking")
         val sortAdapter = ArrayAdapter<String>(context!!, R.layout.item_spinner_sitter_sort, sortBy)
         spinnerSort.adapter = sortAdapter
+    }
+
+    private fun openSitterDetail() {
+        val pagerAdapter = SitterDetailPagerAdapter(fragmentManager!!, sitterRepository.getSitters())
+        pagerSitterDetail.adapter = pagerAdapter
+        pagerSitterDetail.currentItem = 0
+        pagerSitterDetail.pageMargin = 14.dpToPx().toInt()
+        pagerSitterDetail.visibility = View.VISIBLE
+        viewOverlay.visibility = View.VISIBLE
+
+        viewOverlay.setOnClickListener {
+            pagerSitterDetail.visibility = View.GONE
+            viewOverlay.visibility = View.GONE
+        }
     }
 }
