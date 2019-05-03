@@ -5,7 +5,7 @@
         android:layout_width="match_parent"
         android:layout_margin="4dp"
         android:background="@drawable/shape_item_sitter_bg"
-        android:layout_height="wrap_content">
+        android:layout_height="132dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageAvatar"
@@ -15,14 +15,16 @@
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:src="@color/color_sub"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="27dp"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
 
     <TextView
             android:text="John"
-            android:paddingStart="8dp"
-            android:textSize="30sp"
+            android:layout_marginStart="24dp"
+            android:textSize="28sp"
+            android:fontFamily="@font/baloo"
+            android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@id/imageAvatar"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/textName"
@@ -31,19 +33,31 @@
 
     <TextView
             android:text="2.5 miles"
-            android:paddingStart="8dp"
+            android:layout_marginStart="24dp"
             app:layout_constraintStart_toEndOf="@id/imageAvatar"
             app:layout_constraintTop_toBottomOf="@id/textName"
+            android:textColor="#000000"
             android:id="@+id/textDistance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     <TextView
             android:text="3.8 starts, 240 reviews"
-            android:padding="8dp"
+            android:layout_marginStart="24dp"
+            android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@id/imageAvatar"
             app:layout_constraintTop_toBottomOf="@id/textDistance"
             android:id="@+id/textStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:fontFamily="@font/antic"/>
+
+    <ImageView
+            android:id="@+id/imageStart1"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/imageAvatar"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
