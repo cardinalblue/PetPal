@@ -4,4 +4,5 @@ interface PageNavigator {
 
     fun toSittersPage()
     fun toOwnersPage()
+    fun toBookingPage()
 }

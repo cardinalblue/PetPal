@@ -20,6 +20,7 @@ class SitterDetailFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         calendar.setOnDateClickListener { dateTime ->
+            (activity as MainActivity).navigator.toBookingPage()
         }
 
         val name = arguments!!.getString(ARG_NAME)

@@ -33,5 +33,9 @@ class MainActivity : AppCompatActivity() {
         override fun toSittersPage() {
             replacePage(SittersFragment())
         }
+
+        override fun toBookingPage() {
+            replacePage(SitterBookingFragment())
+        }
     }
 }
