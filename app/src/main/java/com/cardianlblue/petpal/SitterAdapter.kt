@@ -27,10 +27,10 @@ class SitterAdapter : RecyclerView.Adapter<SitterViewHolder>() {
         with(viewHolder) {
             textName.text = sitter.name
             textDistance.text = "${sitter.distance} miles"
-            textStar.text = "${sitter.stars} start, ${sitter.reviews} reviews"
+            textStar.text = "${sitter.stars} stars, ${sitter.reviews} reviews"
 
             for (s in 0..4) {
-                if (sitter.stars > s) {
+                if (sitter.stars > s + 0.5) {
                     imageArray[s].setImageResource(R.drawable.star_gold)
                 } else {
                     imageArray[s].setImageResource(R.drawable.star_silver)
