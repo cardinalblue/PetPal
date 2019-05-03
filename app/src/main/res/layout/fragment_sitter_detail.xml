@@ -51,6 +51,14 @@
 
             <noman.weekcalendar.WeekCalendar
                     android:id="@+id/calendar"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:weekBackgroundColor="@color/transparent"
+                    app:daysBackgroundColor="@color/transparent"
+                    app:weekTextColor="@color/colorPrimary"
+                    app:dayNameLength="threeLetters"
+                    android:layout_marginTop="8dp"
+                    app:daysTextColor="@color/text_gray"
                     app:layout_constraintTop_toBottomOf="@id/textPrice"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_width="match_parent"
@@ -61,6 +69,7 @@
                     android:text="@string/sitter_detail_location"
                     app:layout_constraintStart_toStartOf="parent"
                     android:textSize="20sp"
+                    android:layout_marginTop="8dp"
                     android:fontFamily="@font/antic"
                     android:drawablePadding="8dp"
                     android:layout_marginStart="16dp"
