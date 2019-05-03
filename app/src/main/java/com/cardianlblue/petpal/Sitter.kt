@@ -1,3 +1,10 @@
 package com.cardianlblue.petpal
 
-class Sitter(val name: String, val distance: Float, val stars: Float, val reviews: Int, val location: String, val bio: String, val review: String?=null)
+class Sitter(val name: String,
+             val imageRes: Int,
+             val distance: Float,
+             val stars: Float,
+             val reviews: Int,
+             val location: String,
+             val bio: String,
+             val review: String?=null)
