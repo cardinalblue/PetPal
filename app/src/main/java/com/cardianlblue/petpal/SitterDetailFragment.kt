@@ -19,6 +19,9 @@ class SitterDetailFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        calendar.setOnDateClickListener { dateTime ->
+        }
+
         val name = arguments!!.getString(ARG_NAME)
 
         textName.text = name
