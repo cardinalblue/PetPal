@@ -29,5 +29,6 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0-beta01'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'noman.weekcalendar:weekcalendar:1.0.6'
     testImplementation 'junit:junit:4.12'
 }

@@ -49,15 +49,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="37dp"/>
 
-            <TextView
-                    android:id="@+id/textCalendar"
-                    android:text="This is calendar"
-                    android:gravity="center"
-                    android:textSize="40sp"
+            <noman.weekcalendar.WeekCalendar
+                    android:id="@+id/calendar"
                     app:layout_constraintTop_toBottomOf="@id/textPrice"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="65dp"/>
 
             <TextView
                     android:id="@+id/textLabelLocation"
@@ -68,7 +65,7 @@
                     android:drawablePadding="8dp"
                     android:layout_marginStart="16dp"
                     android:drawableStart="@drawable/shape_sitter_detail_label"
-                    app:layout_constraintTop_toBottomOf="@id/textCalendar"
+                    app:layout_constraintTop_toBottomOf="@id/calendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
