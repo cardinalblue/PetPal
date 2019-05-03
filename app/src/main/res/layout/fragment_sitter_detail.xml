@@ -60,6 +60,7 @@
                     android:layout_height="200dp"/>
 
             <TextView
+                    android:id="@+id/textLabelLocation"
                     android:text="@string/sitter_detail_location"
                     app:layout_constraintStart_toStartOf="parent"
                     android:textSize="20sp"
@@ -68,7 +69,6 @@
                     android:layout_marginStart="16dp"
                     android:drawableStart="@drawable/shape_sitter_detail_label"
                     app:layout_constraintTop_toBottomOf="@id/textCalendar"
-                    android:id="@+id/textLabelLocation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -82,6 +82,80 @@
                     android:layout_width="wrap_content"
                     android:textColor="@color/text_gray"
                     android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/textLabelExperience"
+                    android:text="@string/sitter_detail_experience"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/antic"
+                    android:drawablePadding="8dp"
+                    android:layout_marginStart="16dp"
+                    android:drawableStart="@drawable/shape_sitter_detail_label"
+                    app:layout_constraintTop_toBottomOf="@id/textLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/textExperience"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/textLabelExperience"
+                    android:text="Upper East Side, New York"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/textLabelAboutMe"
+                    android:text="@string/sitter_detail_about"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/antic"
+                    android:drawablePadding="8dp"
+                    android:layout_marginStart="16dp"
+                    android:drawableStart="@drawable/shape_sitter_detail_label"
+                    app:layout_constraintTop_toBottomOf="@id/textExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/textAboutMe"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/textLabelAboutMe"
+                    android:text="They call me the 'Dog Father', I speak fluent dog language!"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/textLabelReviews"
+                    android:text="@string/sitter_detail_reviews"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/antic"
+                    android:drawablePadding="8dp"
+                    android:layout_marginStart="16dp"
+                    android:drawableStart="@drawable/shape_sitter_detail_label"
+                    app:layout_constraintTop_toBottomOf="@id/textAboutMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/textReviews"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/textLabelReviews"
+                    android:text="They call me the 'Dog Father', I speak fluent dog language!"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:layout_height="wrap_content"/>
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
