@@ -13,8 +13,11 @@ class SitterDetailPagerAdapter(fragmentManager: FragmentManager,
         val sitter = sitters[position]
         val data = Bundle()
 
+        data.putString(ARG_PRICE, sitter.price)
         data.putString(ARG_NAME, sitter.name)
-        //add more
+        data.putString(ARG_LOCATION, sitter.location)
+        data.putString(ARG_ABOUT, sitter.about)
+        data.putFloat(ARG_REVIEWS, sitter.stars)
 
         fragment.arguments = data
 

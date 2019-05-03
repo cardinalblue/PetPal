@@ -7,5 +7,5 @@ class Sitter(val name: String,
              val stars: Float,
              val reviews: Int,
              val location: String,
-             val bio: String,
+             val about: String,
              val review: String?=null)
