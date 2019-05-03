@@ -1,20 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
         app:cardCornerRadius="25dp"
         app:strokeColor="@color/color_sub"
         app:strokeWidth="5dp"
         android:layout_height="match_parent">
 
-    <TextView
-            android:textSize="28sp"
-            android:textColor="@color/black"
-            android:text="Tom "
-            android:layout_marginTop="8dp"
-            android:layout_marginStart="20dp"
-            android:fontFamily="@font/baloo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/textName"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="28sp"
+                    android:textColor="@color/black"
+                    android:text="Tom"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/baloo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:id="@+id/imageAvatar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintTop_toBottomOf="@id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"/>
+
+            <TextView
+                    android:id="@+id/textPrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imageAvatar"
+                    android:background="@color/color_sub"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="5$/hr"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/antic"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"/>
+
+            <TextView
+                    android:id="@+id/textCalendar"
+                    android:text="This is calendar"
+                    android:gravity="center"
+                    android:textSize="40sp"
+                    app:layout_constraintTop_toBottomOf="@id/textPrice"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            <TextView
+                    android:text="@string/sitter_detail_location"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/antic"
+                    android:drawablePadding="8dp"
+                    android:layout_marginStart="16dp"
+                    android:drawableStart="@drawable/shape_sitter_detail_label"
+                    app:layout_constraintTop_toBottomOf="@id/textCalendar"
+                    android:id="@+id/textLabelLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/textLocation"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="32dp"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/textLabelLocation"
+                    android:text="Upper East Side, New York"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </com.google.android.material.card.MaterialCardView>

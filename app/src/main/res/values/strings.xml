@@ -2,4 +2,8 @@
     <string name="app_name">Petpal</string>
     <string name="main_owner">Pet Owner</string>
     <string name="main_sitter">Pet Sitter</string>
+    <string name="sitter_detail_location">Location</string>
+    <string name="sitter_detail_experience">Experience</string>
+    <string name="sitter_detail_about">About Me</string>
+    <string name="sitter_detail_reviews">Reviews</string>
 </resources>

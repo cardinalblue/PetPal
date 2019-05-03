@@ -7,4 +7,6 @@
     <color name="color_sub">#c2cfb9</color>
     <color name="black">#000000</color>
 
+    <color name="text_gray">#a1a1a1</color>
+
 </resources>
