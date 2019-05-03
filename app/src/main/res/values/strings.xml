@@ -6,4 +6,9 @@
     <string name="sitter_detail_experience">Experience</string>
     <string name="sitter_detail_about">About Me</string>
     <string name="sitter_detail_reviews">Reviews</string>
+
+    <string name="sitter_booking_pickup">Pickup Location:</string>
+    <string name="sitter_booking_note">Notes for the sitter:</string>
+
+    <string name="confirm">Confirm</string>
 </resources>
