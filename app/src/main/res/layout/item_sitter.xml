@@ -27,6 +27,7 @@
             android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@id/imageAvatar"
             app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="12dp"
             android:id="@+id/textName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -42,7 +43,7 @@
             android:layout_height="wrap_content"/>
 
     <TextView
-            android:text="3.8 starts, 240 reviews"
+            android:text="3.8 stars, 240 reviews"
             android:layout_marginStart="24dp"
             android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@id/imageAvatar"
@@ -58,7 +59,47 @@
             app:layout_constraintTop_toBottomOf="@id/textStar"
             android:src="@drawable/star_gold"
             android:layout_marginTop="3dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    <ImageView
+            android:id="@+id/imageStart2"
+            android:layout_marginStart="7dp"
+            app:layout_constraintStart_toEndOf="@id/imageStart1"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    <ImageView
+            android:id="@+id/imageStart3"
+            android:layout_marginStart="7dp"
+            app:layout_constraintStart_toEndOf="@id/imageStart2"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    <ImageView
+            android:id="@+id/imageStart4"
+            android:layout_marginStart="7dp"
+            app:layout_constraintStart_toEndOf="@id/imageStart3"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+    <ImageView
+            android:id="@+id/imageStart5"
+            android:layout_marginStart="7dp"
+            app:layout_constraintStart_toEndOf="@id/imageStart4"
+            app:layout_constraintTop_toBottomOf="@id/textStar"
+            android:src="@drawable/star_gold"
+            android:layout_marginTop="3dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

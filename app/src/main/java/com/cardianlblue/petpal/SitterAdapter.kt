@@ -29,10 +29,12 @@ class SitterAdapter : RecyclerView.Adapter<SitterViewHolder>() {
             textDistance.text = "${sitter.distance} miles"
             textStar.text = "${sitter.stars} start, ${sitter.reviews} reviews"
 
-            if (sitter.stars > 1) {
-                imageStart1.setImageResource(R.drawable.star_gold)
-            } else {
-                imageStart1.setImageResource(R.drawable.star_silver)
+            for (s in 0..4) {
+                if (sitter.stars > s) {
+                    imageArray[s].setImageResource(R.drawable.star_gold)
+                } else {
+                    imageArray[s].setImageResource(R.drawable.star_silver)
+                }
             }
 
             itemView.setOnClickListener {
@@ -47,6 +49,5 @@ class SitterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val textName = itemView.textName
     val textDistance = itemView.textDistance
     val textStar = itemView.textStar
-    val imageStart1 = itemView.imageStart1
-
+    val imageArray = arrayOf(itemView.imageStart1, itemView.imageStart2, itemView.imageStart3, itemView.imageStart4, itemView.imageStart5)
 }
