@@ -31,6 +31,7 @@ open class SittersFragment : Fragment() {
 
         val pagerAdapter = SitterDetailPagerAdapter(childFragmentManager!!, sitterRepository.getSitters())
         pagerSitterDetail.adapter = pagerAdapter
+        pagerSitterDetail.offscreenPageLimit = 10
 
         spinnerSort.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
